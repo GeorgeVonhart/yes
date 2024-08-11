@@ -6,7 +6,7 @@ const FooterColumns = ({ className = "" }) => {
       className={`w-[306px] flex flex-col items-start justify-start pt-[3.1px] px-0 pb-0 box-border text-left text-base text-ghostwhite-600  ${className}`}
     >
       <div className="self-stretch flex flex-col items-start justify-start gap-[29.4px]">
-        <div className="w-[268.9px] flex flex-row items-start justify-center py-0 px-5 box-border">
+        <div className="w-[268.9px] flex flex-row items-start justify-start py-0 px-5 box-border">
           <img
             className="h-[85px] w-[68px] relative z-[1]"
             loading="lazy"
@@ -16,7 +16,7 @@ const FooterColumns = ({ className = "" }) => {
         </div>
         <div className="self-stretch relative leading-[22px] uppercase">
           <span className = "clash-regular ">{`© COPYRIGHT 2024 `}</span>
-          <span className="clash-medium">EHSANXA.COM</span>
+          <span className="clash-medium font-bold ">EHSANXA.COM</span>
         </div>
       </div>
     </div>

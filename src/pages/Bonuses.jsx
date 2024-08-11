@@ -4,12 +4,16 @@ import BackgroundBorder from "../components/BackgroundBorder";
 
 const Bonuses = () => {
   return (
-    <div className="w-full relative bg-gray-500 overflow-y-auto flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <Body />
-      <section className="self-stretch bg-gray-400 box-border flex flex-col items-start justify-start pt-0 px-0 pb-px max-w-full border-t-[1px] border-solid border-ghostwhite-700">
-        <Container />
-        <BackgroundBorder />
+    <div className="w-full min-h-screen flex flex-col bg-gray-500 overflow-hidden">
+      <div className="flex-grow w-full">
+        <Body />
+      </div>
+      <section className="w-full bg-gray-400 border-t border-ghostwhite-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Container />
+        </div>
       </section>
+      <BackgroundBorder className="mt-auto w-full" />
     </div>
   );
 };
