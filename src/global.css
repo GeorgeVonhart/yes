@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('/fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('/fonts/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('/fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'ClashDisplay';
+  }
+}
+.clash-semibold {
+  font-family: 'ClashDisplay';
+  font-weight: 600;
+}
+.clash-medium {
+  font-family: 'ClashDisplay';
+  font-weight: 500;
+}
+.clash-regular {
+
+  font-family: 'ClashDisplay';
+  font-weight:400;
+}
+.clash-bold {
+
+  font-family: 'ClashDisplay';
+  font-weight:700;
+}
+body {
+  @apply leading-[normal] m-0;
+}
+
+*, ::before, ::after {
+  border-width: 0;
+}
